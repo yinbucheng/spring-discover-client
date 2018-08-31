@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Import(DiscoverBeanRegister.class)
+@Import({DiscoverBeanRegister.class})
 public @interface EnableDiscoverClient2 {
     String value() default "EUREKA";
 }
