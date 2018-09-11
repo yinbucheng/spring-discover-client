@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class BeanConfigPostProcessor implements EnvironmentPostProcessor{
+public class ApolloEnviromentPostProcessor implements EnvironmentPostProcessor{
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>采用手动注入apollo配置文件");
